@@ -1,0 +1,10 @@
+{% extends "fifthApp/base.html" %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>Django level five</h1>
+        {% if user.is_authenticated %}
+            <h3>Welcome {{user.username}}</h3>
+        {% endif %}
+    </div>
+{% endblock %}
